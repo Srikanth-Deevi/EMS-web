@@ -1,0 +1,38 @@
+<web-app>
+	<servlet>
+		<servlet-name>data</servlet-name>
+		<servlet-class>ems.servlets.GetData</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>data</servlet-name>
+		<url-pattern>/data</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetEmployees</servlet-name>
+		<servlet-class>ems.servlets.GetEmployees</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetEmployees</servlet-name>
+		<url-pattern>/GetEmployees</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>validate</servlet-name>
+		<servlet-class>ems.servlets.ValidateData</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>validate</servlet-name>
+		<url-pattern>/validate</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UserHome</servlet-name>
+		<servlet-class>ems.servlets.UserHome</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserHome</servlet-name>
+		<url-pattern>/UserHome</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
